@@ -3,7 +3,7 @@
 <hr></hr>
 span {font-size:75}
 
-<span>VACCINE PREDICTION COMP.</span>
+###### VACCINE PREDICTIONS
 
 Current Ranking: Top 15 (0.2%)
 
