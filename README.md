@@ -1,6 +1,7 @@
 # DrivenData Competitions
 
-**Vaccine Competition**
+**Vaccine Competition** ---------------------
+
 Current Rank: Top 15
 
 Two example files are provided on how to apporach the problem.
