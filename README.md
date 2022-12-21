@@ -1,7 +1,7 @@
 # DrivenData Competitions
 
 <hr></hr>
-<span style="font-size:75;">VACCINE PREDICTION COMP.</span>
+<span style="font-size:75">VACCINE PREDICTION COMP.</span>
 
 Current Ranking: Top 15 (0.2%)
 
