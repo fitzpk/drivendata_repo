@@ -1,9 +1,9 @@
 # DrivenData Competitions
 
 <hr></hr>
-<b>VACCINE PREDICTION COMPETITION</b>
+<b>VACCINE PREDICTION COMP.</b>
 
-Current Rank: Top 15
+Current Ranking: Top 15 (0.2%)
 
 Two example files are provided on how to apporach the problem.
 1. PyTorch neural network via the Skorch library and tuned using Optuna.
