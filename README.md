@@ -1,7 +1,7 @@
 # DrivenData Competitions
 
 <hr></hr>
-**Vaccine Competition**
+<b>VACCINE PREDICTION COMPETITION</b>
 
 Current Rank: Top 15
 
