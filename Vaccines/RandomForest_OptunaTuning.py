@@ -168,16 +168,17 @@ def objective_h1n1(trial):
     param_grid = {
         "verbose": 1,
 
-        'max_depth': trial.suggest_int('max_depth', 1, 1000),
-        'n_estimators': trial.suggest_int('n_estimators', low=4, high=max(5,2048),log=True),
+        'n_estimators': trial.suggest_int('n_estimators', low=4, high=300),
         "max_leaf_nodes": trial.suggest_int("max_leaf_nodes",low=4, high=2**15, log=True),
         "max_features": trial.suggest_loguniform('max_features', low=0.1, high=1),
 
-        'min_samples_split': trial.suggest_int('min_samples_split', 5, 100),
-        'min_samples_leaf': trial.suggest_int('min_samples_leaf', 5, 100),
+        'min_samples_split': trial.suggest_int('min_samples_split', 2, 100),
+        'min_samples_leaf': trial.suggest_int('min_samples_leaf', 2, 100),
+        'min_impurity_decrease': trial.suggest_int('min_impurity_decrease', 0.00000001, 0.5),
         "criterion": trial.suggest_categorical("criterion", ["gini", "entropy"]),
         "class_weight": trial.suggest_categorical("class_weight", ["balanced", "balanced_subsample"]),
         #"max_samples": trial.suggest_float('max_samples', 0, 1),
+        'max_depth': trial.suggest_int('max_depth', 1, 11),
         
     }
 
@@ -219,16 +220,17 @@ def objective_seas(trial):
     param_grid = {
         "verbose": 1,
 
-        'max_depth': trial.suggest_int('max_depth', 1, 1000),
-        'n_estimators': trial.suggest_int('n_estimators', low=4, high=max(5,2048),log=True),
+        'n_estimators': trial.suggest_int('n_estimators', low=4, high=300),
         "max_leaf_nodes": trial.suggest_int("max_leaf_nodes",low=4, high=2**15, log=True),
         "max_features": trial.suggest_loguniform('max_features', low=0.1, high=1),
 
-        'min_samples_split': trial.suggest_int('min_samples_split', 5, 100),
-        'min_samples_leaf': trial.suggest_int('min_samples_leaf', 5, 100),
+        'min_samples_split': trial.suggest_int('min_samples_split', 2, 100),
+        'min_samples_leaf': trial.suggest_int('min_samples_leaf', 2, 100),
+        'min_impurity_decrease': trial.suggest_int('min_impurity_decrease', 0.00000001, 0.5),
         "criterion": trial.suggest_categorical("criterion", ["gini", "entropy"]),
         "class_weight": trial.suggest_categorical("class_weight", ["balanced", "balanced_subsample"]),
         #"max_samples": trial.suggest_float('max_samples', 0, 1),
+        'max_depth': trial.suggest_int('max_depth', 1, 11),
     }
 
     rfc = sklearn.ensemble.RandomForestClassifier(**param_grid)
