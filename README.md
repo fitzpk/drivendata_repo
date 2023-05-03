@@ -5,6 +5,7 @@
 ## VACCINE PREDICTIONS
 
 Current Ranking: Top 10
+
 <a href=https://www.drivendata.org/competitions/66/flu-shot-learning/page/210/>Competition Link</a>
 
 Two example files are provided on how to apporach the problem.
